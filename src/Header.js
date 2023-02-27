@@ -1,28 +1,34 @@
 import React from "react";
 import './Header.css';
-import {Autocomplete, TextField} from "@mui/material";
+import { Select } from "@web3uikit/core";
 
 function Header() {
     return (
-        <div className = "Header" >
-            <h1 style={{textAlign: "left", padding: '0 16px', boxSizing: "border-box", fontSize: '100px'}}>DAPP PORTAL</h1>
-            <h2 style={{textAlign: "left", padding: '0 16px', boxSizing: "border-box", fontSize: "50px"}}>Your gateway into the Dapp ecosystem</h2>
-            <div style={{display: "flex", marginTop: '20px', marginLeft: '20px'}}>
-            <Autocomplete
-                disablePortal
-                id="combo-box-demo"
-                options={blockchain}
-                sx={{ width: 300 }}
-                renderInput={(params) => <TextField {...params} label="swap" />}
-            />
-            <Autocomplete
-                disablePortal
-                id="combo-box-demo"
-                options={blockchain}
-                sx={{ width: 300 }}
-                style={{marginLeft: '16px'}}
-                renderInput={(params) => <TextField {...params} label="Centralized Exchanges" />}
-            />
+        <div className="Header" >
+            <h1 style={{ textAlign: "left", padding: '0 16px', boxSizing: "border-box", fontSize: '100px' }}>DAPP PORTAL</h1>
+            <h2 style={{ textAlign: "left", padding: '0 16px', boxSizing: "border-box", fontSize: "50px" }}>Your gateway into the Dapp ecosystem</h2>
+            <div style={{ display: "flex", marginTop: '20px', marginLeft: '20px' }}>
+                <Select
+                style={{ zIndex: '7'}}
+                    defaultOptionIndex={0}
+                    id="Select"
+                    label="Choose your network"
+                    onBlurTraditional={function noRefCheck() { }}
+                    onChange={function noRefCheck() { }}
+                    onChangeTraditional={function noRefCheck() { }}
+                    options={[
+                        {
+                            id: 'emoji',
+                            label: 'Emoji',
+                            prefix: '🏴󠁧󠁢󠁷󠁬󠁳󠁿'
+                        },
+                        {
+                            id: 'emoji',
+                            label: 'Emoji',
+                            prefix: '🏴󠁧󠁢󠁷󠁬󠁳󠁿'
+                        },
+                    ]}
+                />
             </div>
         </div>
     )
