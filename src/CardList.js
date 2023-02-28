@@ -8,7 +8,7 @@ function CardList() {
             <div className="container" style={{display: 'flex', boxSizing: "border-box", marginBottom: '10px', width: '100%', maxWidth: "100%", flexWrap: 'wrap'}}>
                 {
                     dblist.map(item => (
-                        <div style={{width: '250px', marginLeft: '80px', marginTop: '32px'}}>
+                        <div style={{width: '250px', marginLeft: '80px', marginTop: '50px'}}>
                             <Card
                                 description="Click to create a dApp"
                                 isSelected
