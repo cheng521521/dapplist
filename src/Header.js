@@ -6,6 +6,9 @@ import {List} from '@web3uikit/icons'
 
 
 function Header() {
+    const onSelectChange = (opt) => {
+        console.log('123')
+    }
     return (
         <div className="Header" >
             <h1 style={{ textAlign: "left", padding: '0 16px', boxSizing: "border-box", fontSize: '100px' }}>DAPP PORTAL</h1>
@@ -18,8 +21,8 @@ function Header() {
                             defaultOptionIndex={0}
                             id="Select"
                             label={item.name}
-                            onBlurTraditional={function noRefCheck() { }}
-                            onChange={function noRefCheck() { }}
+                            onBlurTraditional={function noRefCheck(opt) { }}
+                            onChange={onSelectChange}
                             onChangeTraditional={function noRefCheck() { }}
                             options={[
                                 {
