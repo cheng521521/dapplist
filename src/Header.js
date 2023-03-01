@@ -5,10 +5,7 @@ import typeTab from "./db/type-tab.json"
 import {List} from '@web3uikit/icons'
 
 
-function Header() {
-    const onSelectChange = (opt) => {
-        console.log('123')
-    }
+function Header(props) {
     return (
         <div className="Header" >
             <h1 style={{ textAlign: "left", padding: '0 16px', boxSizing: "border-box", fontSize: '100px' }}>DAPP PORTAL</h1>
@@ -22,7 +19,11 @@ function Header() {
                             id="Select"
                             label={item.name}
                             onBlurTraditional={function noRefCheck(opt) { }}
-                            onChange={onSelectChange}
+                            onChange={(option) => {
+                                console.log("+++++++++++++++++s")
+                                console.log(option)
+                                props.onItemClick(option)
+                            }}
                             onChangeTraditional={function noRefCheck() { }}
                             options={[
                                 {
