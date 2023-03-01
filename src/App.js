@@ -6,9 +6,10 @@ import {useRef} from "react";
 
 function App() {
     let cardList = useRef(null);
-    const headerClick = (itemData) => {
-        console.log('itemData', itemData);
-        cardList.current.filterList(itemData)
+    const headerClick = (itemData, type) => {
+        console.log('itemDataId', itemData.id);
+        console.log('type', type)
+        cardList.current.filterList(itemData.id, type)
     }
     return (
         <div className="App" style={{height: '100vh', background: "#edf7ff", overflowY: 'auto'}}>

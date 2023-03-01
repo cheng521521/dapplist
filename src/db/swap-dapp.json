@@ -1,47 +1,17 @@
 [
   {
     "name": "uniswap",
-    "tag": "eth,polygon"
+    "tag": "ethereum,polygon",
+    "icon": "",
+    "url": "https://app.uniswap.org/#/swap"
   },
   {
     "name": "1rich",
-    "tag": "eth"
+    "tag": "ethereum",
+    "url": "https://app.1inch.io/#/1/simple/swap/ETH/DAI"
   },  {
-    "name": "1rich",
-    "tag": "eth"
-  },  {
-    "name": "1rich",
-    "tag": "eth"
-  },  {
-    "name": "1rich",
-    "tag": "eth"
-  },  {
-    "name": "1rich",
-    "tag": "eth"
-  },  {
-    "name": "1rich",
-    "tag": "eth"
-  },  {
-    "name": "1rich",
-    "tag": "eth"
-  },  {
-    "name": "1rich",
-    "tag": "eth"
-  },  {
-    "name": "1rich",
-    "tag": "eth"
-  },  {
-    "name": "1rich",
-    "tag": "eth"
-  },  {
-    "name": "1rich",
-    "tag": "eth"
-  },  {
-    "name": "1rich",
-    "tag": "eth"
-  },  {
-    "name": "1rich",
-    "tag": "eth"
+    "name": "sushi",
+    "tag": "ethereum",
+    "url": "https://www.sushi.com/swap"
   }
-
 ]

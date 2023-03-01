@@ -1,0 +1,17 @@
+[
+    {
+      "name": "binance",
+      "tag": "ethereum,polygon",
+      "icon": "",
+      "url": "https://www.binance.com/en"
+    },
+    {
+      "name": "coinbase",
+      "tag": "ethereum",
+      "url": "https://www.coinbase.com/"
+    },  {
+      "name": "okx",
+      "tag": "ethereum",
+      "url": "https://www.okx.com/"
+    }
+  ]

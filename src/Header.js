@@ -1,6 +1,6 @@
 import React from "react";
 import './Header.css';
-import { Select,CryptoLogos,SvgServer } from "@web3uikit/core";
+import { Select,CryptoLogos } from "@web3uikit/core";
 import typeTab from "./db/type-tab.json"
 import {List} from '@web3uikit/icons'
 
@@ -20,9 +20,9 @@ function Header(props) {
                             label={item.name}
                             onBlurTraditional={function noRefCheck(opt) { }}
                             onChange={(option) => {
-                                console.log("+++++++++++++++++s")
-                                console.log(option)
-                                props.onItemClick(option)
+                                console.log('option',option)
+                                console.log('itemName', item.name)
+                                props.onItemClick(option, item.name)
                             }}
                             onChangeTraditional={function noRefCheck() { }}
                             options={[
@@ -86,9 +86,3 @@ function Header(props) {
 }
 
 export default Header;
-
-// Top 100 films as rated by IMDb users. http://www.imdb.com/chart/top
-const blockchain = [
-    { label: 'all', id: 'all' },
-    { label: 'eth', id: 'eth' },
-];

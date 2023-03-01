@@ -1,0 +1,14 @@
+[
+    {
+        "name": "uniswap",
+        "blockchain": "ethereum",
+        "tag": ["swap"],
+        "icon": ""
+    },
+    {
+        "name": "1INCH",
+        "blockchain": "ethereum",
+        "tag": ["swap"],
+        "icon": "1"
+    }
+]
