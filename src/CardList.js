@@ -8,26 +8,22 @@ function CardList(props, ref) {
     useImperativeHandle(ref, () => ({
         filterList
     }))
-    let list = swap;
-    const filterList = (data, type) => {
+    const [list, setList] = useState(swap);
+
+    const filterList = (key, type) => {
+        let newList = [];
         switch (type) {
-            case "swap":
-                [list, setList] = useState(swap)
-                console.log('typeCard', type)
-                console.log('filterList', data);
-                console.log('dblist', swap);
-                let newList = [];
-                console.log(data.toLowerCase() === 'All'.toLowerCase())
-                if (data.toLowerCase() === 'All'.toLowerCase()) {
-                    newList = swap
-                } else {
-                    newList = swap.filter(swap => {
-                        return swap.tag.includes(data)
-                    })
-                }
-                console.log(newList)
-                setList(newList)
+            case "Swapping":
+                newList = fliterKeyList(key, swap)
+                break;
+            case "Cex":
+                newList = fliterKeyList(key, cex)
+                break;
+            case "Dex":
+                newList = fliterKeyList(key, cex)
+                break;
         }
+        setList(newList)
 
     }
 
@@ -60,5 +56,17 @@ function CardList(props, ref) {
         </div>
     )
 }
-
+function fliterKeyList(key, list)  {
+    console.log("key is", key)
+    if (key.toLowerCase() === 'All'.toLowerCase()) {
+        console.log("list is", list)
+        return list;
+    } else {
+        list = list.filter(item => {
+            return item.tag.includes(key)
+        })
+        console.log("list is", list)
+    }
+    return list;
+}
 export default forwardRef(CardList);
