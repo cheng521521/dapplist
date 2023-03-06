@@ -1,17 +1,18 @@
 [
   {
     "name": "uniswap",
-    "tag": "ethereum,polygon",
+    "tag": "ethereum,polygon,optimism,arbitrum,celo",
     "icon": "",
     "url": "https://app.uniswap.org/#/swap"
   },
   {
     "name": "1rich",
-    "tag": "ethereum",
+    "tag": "ethereum,binance,polygon,optimism,arbitrum,",
+    "icon": "https://portal.arbitrum.one/wp-content/uploads/2021/09/LwPtET72_400x400.jpg",
     "url": "https://app.1inch.io/#/1/simple/swap/ETH/DAI"
   },  {
     "name": "sushi",
-    "tag": "ethereum",
+    "tag": "ethereum,binance,polygon,optimism",
     "url": "https://www.sushi.com/swap"
   }
 ]

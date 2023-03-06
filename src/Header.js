@@ -8,8 +8,8 @@ import {List} from '@web3uikit/icons'
 function Header(props) {
     return (
         <div className="Header" >
-            <h1 style={{ textAlign: "left", padding: '0 16px', boxSizing: "border-box", fontSize: '100px' }}>DAPP PORTAL</h1>
-            <h2 style={{ textAlign: "left", padding: '0 16px', boxSizing: "border-box", fontSize: "50px" }}>Your gateway into the Dapp ecosystem</h2>
+            <h1 style={{ textAlign: "left", padding: '0 16px', boxSizing: "border-box", fontSize: '100px', marginLeft: '60px'}}>DAPP PORTAL</h1>
+            <h2 style={{ textAlign: "left", padding: '0 16px', boxSizing: "border-box", fontSize: "50px", marginLeft: '60px'}}>Your gateway into the Dapp ecosystem</h2>
             <div style={{ display: "flex", marginTop: '20px', marginLeft: '20px', flexWrap: 'wrap' }}>
                 {
                     typeTab.map(item => (
