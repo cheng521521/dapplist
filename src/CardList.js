@@ -44,7 +44,7 @@ function CardList(props, ref) {
             <div className="container" style={{ display: 'flex', boxSizing: "border-box", marginBottom: '10px', width: '100%', maxWidth: "100%", flexWrap: 'wrap' }}>
                 {
                     list.map(item => (
-                        <div style={{ width: '250px', marginLeft: '80px', marginTop: '50px' }}>
+                        <div style={{ width: '250px', height: '280px', marginLeft: '80px', marginTop: '50px' }}>
                             <Card
                                 isSelected
                                 onClick={function noRefCheck() { window.open(item.url) }}
@@ -52,11 +52,7 @@ function CardList(props, ref) {
                                 title={item.name}
                             >
                                 <div>
-                                    <Illustration
-                                        height="180px"
-                                        logo="servers"
-                                        width="100%"
-                                    />
+                                    <img src= 'https://portal.arbitrum.one/wp-content/uploads/2021/09/LwPtET72_400x400.jpg' style={{height: '200px', width: '100%', borderRadius: '50%', objectFit: 'cover' }}/>
                                 </div>
                             </Card>
                         </div>
