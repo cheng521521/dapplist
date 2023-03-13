@@ -35,6 +35,7 @@ function CardList(props, ref) {
                 newList = fliterKeyList(key, wallet)
                 break;
         }
+        console.log(JSON.stringify(newList))
         setList(newList)
 
     }
@@ -51,8 +52,8 @@ function CardList(props, ref) {
                                 setIsSelected={function noRefCheck() { }}
                                 title={item.name}
                             >
-                                <div>
-                                    <img src= 'https://portal.arbitrum.one/wp-content/uploads/2021/09/LwPtET72_400x400.jpg' style={{height: '200px', width: '100%', borderRadius: '50%', objectFit: 'cover' }}/>
+                                <div style={{height: '210px', width: '100%'}}>
+                                    <img src= {item.icon} style={{height: '130px', width: '130px', borderRadius: '50%', objectFit: 'cover',marginTop: '30px' }}/>
                                 </div>
                             </Card>
                         </div>

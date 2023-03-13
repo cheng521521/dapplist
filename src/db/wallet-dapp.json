@@ -2,7 +2,7 @@
     {
       "name": "Metamask",
       "tag": "ethereum,polygon,binance,optimism",
-      "icon": "",
+      "icon": "/img/metamask.jpg",
       "url": "https://metamask.io/"
     }
 ]
